@@ -10,6 +10,9 @@
  * Thanks to @redclov3r for the `line-height` Sass:
  * twitter.com/redclov3r/status/250301539321798657
  */
+
+/**
+ * Commented out to use in change to work with a base 10px. See below...
 @mixin font-size($font-size, $line-height:true){
     font-size:$font-size;
     font-size:($font-size / $base-font-size)*1rem;
@@ -18,6 +21,17 @@
     }
 }
 
+ */
+
+$rem-base: 10px;
+
+@mixin font-size($font-size, $line-height:true){
+    font-size: $font-size;
+    font-size: ($font-size / $rem-base) * 1rem;
+    @if $line-height == true{
+        line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+    }
+}
 
 /**
  * Style any number of headings in one fell swoop, e.g.:

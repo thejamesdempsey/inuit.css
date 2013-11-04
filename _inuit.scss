@@ -155,12 +155,12 @@
 /**
  * Base styles; unclassed HTML elements etc.
  */
-@import "base/main";
-@import "base/headings";
-@import "base/paragraphs";
+//@import "base/main";
+//@import "base/headings";
+//@import "base/paragraphs";
 @import "base/smallprint";
 @import "base/quotes";
-@import "base/code";
+//@import "base/code";
 @import "base/images";
 @import "base/lists";
 @import "base/tables";
@@ -205,9 +205,9 @@
 /**
  * Style trumps; helper and brand classes
  */
-@import "generic/widths";
-@import "generic/push";
-@import "generic/pull";
+//@import "generic/widths";
+//@import "generic/push";
+//@import "generic/pull";
 @import "generic/brand";
 @import "generic/helper";
 @import "generic/debug";
